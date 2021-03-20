@@ -1,1 +1,1 @@
-![ Alt text](index.gif) / ! [](index.gif)
+![Index Demo](index.gif) / 
