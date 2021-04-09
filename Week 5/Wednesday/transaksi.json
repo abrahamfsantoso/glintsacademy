@@ -1,0 +1,88 @@
+[{
+  "_id": {
+    "$oid": "5fccb706683964d75bd4d3c8"
+  },
+  "barang": {
+    "_id": {
+      "$oid": "5fccb45e683964d75bd4d3bc"
+    },
+    "nama": "Pepsodent",
+    "harga": {
+      "$numberDecimal": "14500"
+    },
+    "pemasok": {
+      "_id": {
+        "$oid": "5fccb431683964d75bd4d3b9"
+      },
+      "nama": "Khay"
+    }
+  },
+  "pelanggan": {
+    "_id": {
+      "$oid": "5fccb3f6683964d75bd4d3b6"
+    },
+    "nama": "Tommy"
+  },
+  "jumlah": 1,
+  "total": {
+    "$numberDecimal": "14500"
+  }
+},{
+  "_id": {
+    "$oid": "5fccb7cd683964d75bd4d3ca"
+  },
+  "barang": {
+    "_id": {
+      "$oid": "5fccb5b9683964d75bd4d3c3"
+    },
+    "nama": "Lifeboy",
+    "harga": {
+      "$numberDecimal": "24600"
+    },
+    "pemasok": {
+      "_id": {
+        "$oid": "5fccb43a683964d75bd4d3ba"
+      },
+      "nama": "Heru"
+    }
+  },
+  "pelanggan": {
+    "_id": {
+      "$oid": "5fccb406683964d75bd4d3b7"
+    },
+    "nama": "Firman"
+  },
+  "jumlah": 2,
+  "total": {
+    "$numberDecimal": "49200"
+  }
+},{
+  "_id": {
+    "$oid": "5fccb85c683964d75bd4d3cb"
+  },
+  "barang": {
+    "_id": {
+      "$oid": "5fccb5f3683964d75bd4d3c5"
+    },
+    "nama": "Clear",
+    "harga": {
+      "$numberDecimal": "44500"
+    },
+    "pemasok": {
+      "_id": {
+        "$oid": "5fccb442683964d75bd4d3bb"
+      },
+      "nama": "Siti"
+    }
+  },
+  "pelanggan": {
+    "_id": {
+      "$oid": "5fccb416683964d75bd4d3b8"
+    },
+    "nama": "Ilham"
+  },
+  "jumlah": 3,
+  "total": {
+    "$numberDecimal": "133500"
+  }
+}]
