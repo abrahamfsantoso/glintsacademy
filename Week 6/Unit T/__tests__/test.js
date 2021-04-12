@@ -156,21 +156,21 @@ describe("Auth Test", () => {
       })
   
     })
-    describe("/pelanggan DELETE", ()=> {
-      it("it should success DELETE the pelanggan data", async ()=> {
-        const id_pelanggan = '6073f2994f19a59c1957a120'
-        const res = await request(app)
-          .delete(`/pelanggan/${id_pelanggan}`)
-          .set({
-            Authorization: `Bearer ${authenticationToken}`,
-          });
+    // describe("/pelanggan DELETE", ()=> {
+    //   it("it should success DELETE the pelanggan data", async ()=> {
+    //     const id_pelanggan = '6073f2994f19a59c1957a120'
+    //     const res = await request(app)
+    //       .delete(`/pelanggan/${id_pelanggan}`)
+    //       .set({
+    //         Authorization: `Bearer ${authenticationToken}`,
+    //       });
           
         
-        expect(res.statusCode).toEqual(200)
-        expect(res.body).toBeInstanceOf(Object)
-        expect(res.body.message).toEqual("Success")
-      })
+    //     expect(res.statusCode).toEqual(200)
+    //     expect(res.body).toBeInstanceOf(Object)
+    //     expect(res.body.message).toEqual("Success")
+    //   })
   
-    })
+    // })
   })
   
