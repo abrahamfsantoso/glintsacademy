@@ -18,8 +18,8 @@ module.exports.create = async (req, res, next) => {
   // Initialita
   let errors = [];
 
-  if (!validator.isAlpha(req.body.nama)) {
-    errors.push("Nama has to be alpha only");
+  if (!validator.isAlpha(req.body.name)) {
+    errors.push("Name has to be alpha only");
   }
 
   if (!validator.isEmail(req.body.email)) {

@@ -23,30 +23,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">23.08% </span>
+                <span class="strong">10.77% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>15/65</span>
+                <span class='fraction'>7/65</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">11.9% </span>
+                <span class="strong">0% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>5/42</span>
+                <span class='fraction'>0/42</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">25% </span>
+                <span class="strong">0% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>1/4</span>
+                <span class='fraction'>0/4</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">23.08% </span>
+                <span class="strong">10.77% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>15/65</span>
+                <span class='fraction'>7/65</span>
             </div>
         
             
@@ -258,47 +258,47 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -442,48 +442,48 @@ exports.getOne = <span class="fstat-no" title="function not covered" >(r</span>e
 <span class="cstat-no" title="statement not covered" >  next();</span>
 };
 &nbsp;
-exports.create = async (req, res, next) =&gt; {
-  let errors = [];
+exports.create = <span class="fstat-no" title="function not covered" >as</span>ync (req, res, next) =&gt; {
+  let errors = <span class="cstat-no" title="statement not covered" >[];</span>
 &nbsp;
   // Check id_barang is valid or not
-  <span class="missing-if-branch" title="if path not taken" >I</span>if (!mongoose.Types.ObjectId.isValid(req.body.id_barang)) {
+<span class="cstat-no" title="statement not covered" >  if (!mongoose.Types.ObjectId.isValid(req.body.id_barang)) {</span>
 <span class="cstat-no" title="statement not covered" >    errors.push(</span>
       "id_barang is not valid and must be 24 character &amp; hexadecimal"
     );
   }
 &nbsp;
   // Check id_pelanggan is valid or not
-  <span class="missing-if-branch" title="if path not taken" >I</span>if (!mongoose.Types.ObjectId.isValid(req.body.id_pelanggan)) {
+<span class="cstat-no" title="statement not covered" >  if (!mongoose.Types.ObjectId.isValid(req.body.id_pelanggan)) {</span>
 <span class="cstat-no" title="statement not covered" >    errors.push(</span>
       "id_pelanggan is not valid and must be 24 character &amp; hexadecimal"
     );
   }
 &nbsp;
   // If the parameters is not valid it will go here
-  <span class="missing-if-branch" title="if path not taken" >I</span>if (errors.length &gt; 0) {
+<span class="cstat-no" title="statement not covered" >  if (errors.length &gt; 0) {</span>
 <span class="cstat-no" title="statement not covered" >    return res.status(400).json({</span>
       message: errors.join(", "),
     });
   }
 &nbsp;
   // Find barang and pelanggan
-  let findData = await Promise.all([
+  let findData = <span class="cstat-no" title="statement not covered" >await Promise.all([</span>
     barang.findOne({ _id: req.body.id_barang }),
     pelanggan.findOne({ _id: req.body.id_pelanggan }),
   ]);
 &nbsp;
   // if barang not found
-  <span class="missing-if-branch" title="if path not taken" >I</span>if (!findData[0]) {
+<span class="cstat-no" title="statement not covered" >  if (!findData[0]) {</span>
 <span class="cstat-no" title="statement not covered" >    errors.push("Barang not found");</span>
   }
 &nbsp;
   // if pelanggan not found
-  <span class="missing-if-branch" title="if path not taken" >I</span>if (!findData[1]) {
+<span class="cstat-no" title="statement not covered" >  if (!findData[1]) {</span>
 <span class="cstat-no" title="statement not covered" >    errors.push("Pelanggan not found");</span>
   }
 &nbsp;
   // Check is jumlah numeric?
-  if (!validator.isNumeric(req.body.jumlah)) {
+<span class="cstat-no" title="statement not covered" >  if (!validator.isNumeric(req.body.jumlah)) {</span>
 <span class="cstat-no" title="statement not covered" >    errors.push("Jumlah must be a number");</span>
   }
 &nbsp;
@@ -619,7 +619,7 @@ exports.delete = <span class="fstat-no" title="function not covered" >as</span>y
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank">istanbul</a>
-                at Mon Apr 12 2021 11:24:34 GMT+0700 (Western Indonesia Time)
+                at Mon Apr 12 2021 14:14:27 GMT+0700 (Western Indonesia Time)
             </div>
         </div>
         <script src="../../../prettify.js"></script>

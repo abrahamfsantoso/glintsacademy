@@ -1,14 +1,11 @@
 {
-  "name": "ci-cd",
+  "name": "friday",
   "version": "1.0.0",
-  "description": "ci-cd practice",
+  "description": "unit testing practice",
   "main": "app.js",
   "scripts": {
     "test" : "cross-env NODE_ENV=test jest --coverage --forceExit",
-    "dev": "NODE_ENV=development nodemon app",
-    "stop": "NODE_ENV=production forever stop index.js || true",
-    "start": "NODE_ENV=production forever start index.js"
-
+    "dev": "NODE_ENV=development nodemon app"
   },
   "author": "Abie",
   "license": "MIT",
