@@ -16,7 +16,7 @@ router.get("/", auth.admin, pelangganController.getAll);
 router.get("/:id", auth.admin, pelangganValidator.getOne, pelangganController.getOne);
 
 // Create pelanggan
-router.post("/", auth.user, pelangganValidator.create, pelangganController.create);
+router.post("/", auth.admin, pelangganValidator.create, pelangganController.create);
 
 // Update pelanggan
 router.put("/:id", auth.admin, pelangganValidator.update, pelangganController.update);

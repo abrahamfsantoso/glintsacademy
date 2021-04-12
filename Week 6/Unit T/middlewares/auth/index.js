@@ -217,22 +217,22 @@ module.exports.user = (req, res, next) => {
   })(req, res, next);
 };
 
-passport.use(
-  'user',
-  new JWTstrategy({
-      secretOrKey: process.env.JWT_SECRET, 
-      jwtFromRequest: ExtractJWT.fromAuthHeaderAsBearerToken()
-    },
-    async (token, done) => {
-      const userSignin = await user.findOne({
-        email: token.email
-      })
+// passport.use(
+//   'user',
+//   new JWTstrategy({
+//       secretOrKey: process.env.JWT_SECRET, 
+//       jwtFromRequest: ExtractJWT.fromAuthHeaderAsBearerToken()
+//     },
+//     async (token, done) => {
+//       const userSignin = await user.findOne({
+//         email: token.email
+//       })
 
-      if (userSignIn.role.includes('user')) {
-        return done(null, token)
-      }
+//       if (userSignin.role.includes('user')) {
+//         return done(null, token)
+//       }
 
-      return done(null, false)
-    }
-  )
-)
+//       return done(null, false)
+//     }
+//   )
+// )
