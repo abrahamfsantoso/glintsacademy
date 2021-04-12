@@ -4,10 +4,10 @@
   "description": "unit testing practice",
   "main": "app.js",
   "scripts": {
-    "test" : "cross-env NODE_ENV=test jest --coverage --forceExit",
+    "test": "cross-env NODE_ENV=test jest --coverage --forceExit",
     "dev": "NODE_ENV=development nodemon app",
-    "stop": "NODE_ENV=production forever stop index.js || true",
-    "start": "NODE_ENV=production forever start index.js"
+    "stop": "NODE_ENV=production forever stop app.js || true",
+    "start": "NODE_ENV=production forever start app.js"
   },
   "author": "Abie",
   "license": "MIT",
