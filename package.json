@@ -5,7 +5,9 @@
   "main": "app.js",
   "scripts": {
     "test" : "cross-env NODE_ENV=test jest --coverage --forceExit",
-    "dev": "NODE_ENV=development nodemon app"
+    "dev": "NODE_ENV=development nodemon app",
+    "stop": "NODE_ENV=production forever stop index.js || true",
+    "start": "NODE_ENV=production forever start index.js"
   },
   "author": "Abie",
   "license": "MIT",
